@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>TC ID Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card card-body bg-light text-center px-md my-2">
+            <h3 class="card-title text-primary">Turkish ID Number Generator</h3>
+
+            <div class="card-text">
+                <button type="button" class="btn btn-primary btn-sm" onclick="generateNumber();">Generate</button>
+                <span id="id-number" style="font-size: 1.25rem;">100000000</span>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="copyNumber();">Copy</button>
+            </div>
+        </div>
+        <div class="alert alert-danger my-2">
+            <h2 class="text-center">DISCLAIMER</h2>
+            <span>I am not responsible for whatever you do with this script. The material and information provided by this app is only for DEMONSTRATIONAL AND EDUCATIONAL purpouses. As I said, I do not claim any responsibility.</span>
+        </div>
+ 
+        <div class="alert alert-info my-2">
+            <h2 class="text-center">INFO</h2>
+            <span>The algorithm used to create Turkish ID numbers is the following:</span>
+            <ol>
+                <li>Randomly generate the first nine digits.</li>
+                <li>Get the numbers from odd digits (1, 3, 5, 7 and 9th digits) and combine them.</li>
+                <li>Multiply the result with 7.</li>
+                <li>Get the numbers from even digits (2, 4, 6 and 8th digits) and combine them.</li>
+                <li>Subtract the combined even digit variable from the combined odd digit variable and modulate it with 10.</li>
+                <li>Add that number to the 10th digit.</li>
+                <li>Get every ten digit of the ID number and combine them and after that, modulate it with 10.</li>
+                <li>Add that number to the 11th digit.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
