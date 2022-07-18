@@ -20,6 +20,18 @@
                 <button type="button" class="btn btn-secondary btn-sm" onclick="copyNumber();">Copy</button>
             </div>
         </div>
+
+        <div class="card card-body bg-light text-center px-md my-2">
+            <h4 class="card-title">ID Number Validator</h4>
+            <div class="card-text">
+                <input type="text" id="check-id" class="form-control" placeholder="ID Number" aria-label="IDNumber">
+                <button type="button" class="btn btn-primary btn-md my-2" onclick="checkNumber()">Check</button>
+            </div>
+            <div class="alert alert-success d-none">The ID number is valid.</div>
+            <div class="alert alert-danger d-none">The ID number is not valid.</div>
+            <div class="alert alert-warning d-none">The ID number is not 11 digits long. Check if you missed a digit or not.</div>
+        </div>
+
         <div class="alert alert-danger my-2">
             <h2 class="text-center">DISCLAIMER</h2>
             <span>I am not responsible for whatever you do with this script. The material and information provided by this app is only for DEMONSTRATIONAL AND EDUCATIONAL purpouses. As I said, I do not claim any responsibility.</span>
