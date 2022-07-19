@@ -1,4 +1,4 @@
-# TurkshIDNumberGenerator
+# TurkishIDNumberGenerator
 Simple ID number generator.
 
 ## DISCLAIMER
